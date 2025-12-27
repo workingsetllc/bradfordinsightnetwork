@@ -3,60 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bradford Insight Network - Connecting insights and expertise">
-    <title>Bradford Insight Network - Home</title>
+    <meta name="description" content="Bradford Insight Network - Launching Soon">
+    <title>Bradford Insight Network</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
+    <div class="main-container">
+        <div class="content-wrapper">
             <h1>Bradford Insight Network</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+            <h2>Launching Soon</h2>
+            
+            <div class="home-content">
+                <p>BB AI connects organizations with the right human expertise for their most specific and demanding questions.</p>
+                <p>Our value lies in deep relationships and hard-won judgment about fit — knowing who is actually best suited to a particular ask, and facilitating direct, credible engagement with that person.</p>
+                <p>We do not develop evaluation frameworks, define scoring systems, or adjudicate correctness. Instead, we focus on access, coordination, and trust: identifying the right expert, structuring the engagement mechanics, and enabling experts to contribute independently and in their own voice. The substance of the work belongs to the expert; the meaning of the work belongs to the client.</p>
+            </div>
+            
+            <nav class="page-nav">
+                <a href="about.html">About</a>
             </nav>
-        </div>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h2>Welcome to Bradford Insight Network</h2>
-                <p>Connecting insights, expertise, and innovation</p>
-            </div>
-        </section>
-
-        <section class="content">
-            <div class="container">
-                <h3>What We Do</h3>
-                <p>Bradford Insight Network is dedicated to providing valuable insights and connecting professionals across industries. Our platform enables collaboration, knowledge sharing, and growth.</p>
-                
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <h4>Expertise</h4>
-                        <p>Access to industry experts and thought leaders</p>
-                    </div>
-                    <div class="feature-card">
-                        <h4>Collaboration</h4>
-                        <p>Connect and collaborate with like-minded professionals</p>
-                    </div>
-                    <div class="feature-card">
-                        <h4>Innovation</h4>
-                        <p>Stay ahead with the latest insights and trends</p>
-                    </div>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Bradford Insight Network. All rights reserved.</p>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <button type="submit" class="submit-btn">Sign Up for Updates</button>
+            </form>
         </div>
-    </footer>
+        
+        <footer>
+            <p>&copy; 2024 Bradford Insight Network. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
