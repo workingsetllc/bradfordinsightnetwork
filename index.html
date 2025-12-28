@@ -9,6 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600;700;900&family=Source+Sans+Pro:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S7MXCP6HSR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-S7MXCP6HSR');
+    </script>
 </head>
 <body>
     <div class="main-container">
@@ -27,7 +37,7 @@
                 <a href="for-ai-teams.html">For AI Teams</a>
             </nav>
             
-            <form class="contact-form">
+            <form class="contact-form" action="https://formspree.io/f/xpwagqnw" method="POST">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
@@ -37,6 +47,10 @@
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
                 </div>
+                
+                <input type="hidden" name="_next" value="https://bradfordinsightnetwork.com/thank-you">
+                <input type="hidden" name="_subject" value="New signup from Bradford Insight Network">
+                <input type="hidden" name="_replyto" value="email">
                 
                 <button type="submit" class="submit-btn">Sign Up for Updates</button>
             </form>
