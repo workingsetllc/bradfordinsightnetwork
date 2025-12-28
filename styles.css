@@ -66,11 +66,28 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: clamp(1rem, 2.5vw, 1.4rem);
     font-weight: 300;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     color: rgba(255, 255, 255, 0.85);
     letter-spacing: 0.08em;
     text-transform: uppercase;
     font-style: italic;
+}
+
+/* Subhero */
+.subhero {
+    margin: 2rem 0 3rem 0;
+}
+
+.subhero p {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* Home Content */
