@@ -145,6 +145,10 @@ h2 {
 /* Navigation */
 .page-nav {
     margin-bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .page-nav a {
