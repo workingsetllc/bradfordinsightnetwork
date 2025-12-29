@@ -408,7 +408,8 @@ footer {
     }
 
     .main-container {
-        padding: 9rem 2rem 2rem;
+        padding: 8rem 2rem 2rem;
+        padding-top: calc(8rem + 4rem);
     }
     
     .content-columns {
