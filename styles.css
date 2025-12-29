@@ -43,13 +43,13 @@ body {
 /* Hero Section */
 .hero-section {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
     position: relative;
     z-index: 1;
 }
 
 .hero-content {
-    max-width: 800px;
+    max-width: 900px;
     margin: 2rem auto 0;
 }
 
@@ -64,6 +64,7 @@ body {
 
 .hero-content p:last-child {
     margin-bottom: 0;
+    text-wrap: balance;
 }
 
 /* Main Content */
@@ -93,12 +94,13 @@ body {
 }
 
 .left-column h3, .right-column h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: clamp(1.4rem, 3vw, 1.8rem);
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 1.5rem;
     color: #ffffff;
     line-height: 1.3;
+    letter-spacing: 0.01em;
 }
 
 .left-column p, .right-column p {
@@ -111,7 +113,7 @@ body {
 
 /* Full Width Section */
 .full-width-section {
-    margin: 4rem auto 6rem auto;
+    margin: 2.5rem auto 6rem auto;
     padding: 3rem;
     background: linear-gradient(145deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
     border-radius: 16px;
@@ -125,12 +127,13 @@ body {
 }
 
 .full-width-section h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: clamp(1.6rem, 4vw, 2.2rem);
-    font-weight: 600;
+    font-weight: 300;
     margin-bottom: 2rem;
     color: #ffffff;
     line-height: 1.3;
+    letter-spacing: 0.01em;
 }
 
 .full-width-section p {
@@ -139,19 +142,20 @@ body {
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.92);
     font-weight: 300;
-    max-width: 900px;
+    max-width: 850px;
     margin: 0 auto;
+    text-wrap: balance;
 }
 
 /* Typography */
 h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: clamp(3rem, 6vw, 5rem);
-    font-weight: 400;
+    font-weight: 200;
     margin-bottom: 1.5rem;
     color: #ffffff;
     text-shadow: 0 4px 16px rgba(0, 0, 0, 0.7);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
     line-height: 1.1;
 }
 
@@ -357,11 +361,11 @@ footer {
     }
     
     .hero-section {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
     
     .full-width-section {
-        margin: 2rem auto 4rem auto;
+        margin: 1.5rem auto 4rem auto;
         padding: 2rem;
     }
 }
@@ -387,11 +391,11 @@ footer {
     }
     
     .hero-section {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
     
     .full-width-section {
-        margin: 1.5rem auto 3rem auto;
+        margin: 1rem auto 3rem auto;
         padding: 1.5rem;
     }
     
