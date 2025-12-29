@@ -111,7 +111,7 @@ body {
 
 /* Full Width Section */
 .full-width-section {
-    margin-top: 4rem;
+    margin: 4rem auto 6rem auto;
     padding: 3rem;
     background: linear-gradient(145deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
     border-radius: 16px;
@@ -122,8 +122,6 @@ body {
         inset 0 1px 0 rgba(255, 255, 255, 0.1);
     text-align: center;
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .full-width-section h3 {
@@ -337,7 +335,7 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 580px) {
     body {
         background-image: 
             linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.7) 100%),
@@ -363,7 +361,7 @@ footer {
     }
     
     .full-width-section {
-        margin-top: 2rem;
+        margin: 2rem auto 4rem auto;
         padding: 2rem;
     }
 }
@@ -393,7 +391,7 @@ footer {
     }
     
     .full-width-section {
-        margin-top: 1.5rem;
+        margin: 1.5rem auto 3rem auto;
         padding: 1.5rem;
     }
     
