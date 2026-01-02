@@ -399,7 +399,7 @@ h1 {
 
 /* About Page */
 .about-page {
-    max-width: 800px;
+    max-width: 900px;
 }
 
 .about-content {
@@ -433,6 +433,13 @@ h1 {
 
 .about-content p:last-child {
     margin-bottom: 0;
+}
+
+.content-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 1.5rem;
 }
 
 /* Footer */
@@ -551,6 +558,10 @@ footer {
     
     .full-width-section {
         margin: 1rem auto 4rem auto;
+        padding: 2rem;
+    }
+
+    .about-content {
         padding: 2rem;
     }
 
