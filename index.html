@@ -50,7 +50,8 @@
     <header class="site-header">
         <div class="container nav-bar">
             <a class="brand" href="index.html">Bradford Insight Network</a>
-            <nav class="nav-links">
+            <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            <nav id="site-nav" class="nav-links">
                 <a href="about.html">About</a>
                 <a href="for-ai-teams.html">For AI Teams</a>
                 <a href="index.html#contact">Contact</a>
@@ -113,5 +114,15 @@
             <p>&copy; 2026 Bradford Insight Network. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+      const menuButton = document.querySelector('.menu-toggle');
+      const navLinks = document.getElementById('site-nav');
+      if (menuButton && navLinks) {
+        menuButton.addEventListener('click', () => {
+          const isOpen = navLinks.classList.toggle('open');
+          menuButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+      }
+    </script>
 </body>
 </html>

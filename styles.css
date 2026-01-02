@@ -61,6 +61,22 @@ body {
 }
 
 .nav-links a {
+    display: inline-block;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+}
+
+.nav-links a {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 0.95rem;
     font-weight: 400;
@@ -481,33 +497,38 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .header-container {
-        padding: 0 1.5rem;
-    }
-    
     .container {
         padding: 0 1.5rem;
     }
     
-    .logo a {
-        font-size: 1.1rem;
-    }
-    
-    .header-nav {
-        gap: 1.5rem;
-    }
-    
-    .header-nav a {
-        font-size: 0.9rem;
-    }
-
     .nav-bar {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
     }
 
     .nav-links {
         width: 100%;
+        display: none;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem 0 0.25rem;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 0.4rem 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
     }
 
     .page {
