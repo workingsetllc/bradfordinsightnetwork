@@ -43,7 +43,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1.25rem;
 }
 
 .brand {
@@ -59,6 +59,8 @@ body {
 .nav-links {
     display: flex;
     gap: 1.5rem;
+    align-items: center;
+    margin-left: auto;
 }
 
 .menu-toggle {
@@ -552,8 +554,16 @@ footer {
         gap: 0.35rem;
     }
 
+    .brand {
+        font-size: 1rem;
+    }
+
     .page {
         padding: 6.5rem 0 2.5rem;
+    }
+
+    .brand {
+        font-size: 1rem;
     }
 }
 
