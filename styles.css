@@ -53,6 +53,7 @@ body {
     color: #ffffff;
     text-decoration: none;
     letter-spacing: 0.04em;
+    white-space: nowrap;
 }
 
 .nav-links {
@@ -60,20 +61,40 @@ body {
     gap: 1.5rem;
 }
 
-.nav-links a {
-    display: inline-block;
-}
-
 .menu-toggle {
     display: none;
     background: none;
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: #ffffff;
-    padding: 0.5rem 0.75rem;
+    padding: 0.4rem 0.6rem;
     border-radius: 8px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
-    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.menu-toggle:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 3px;
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 2px;
+    margin: 4px 0;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 .nav-links a {
