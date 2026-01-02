@@ -75,6 +75,7 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 4px;
+    line-height: 0;
 }
 
 .menu-toggle:focus-visible {
@@ -554,11 +555,15 @@ footer {
     }
 
     .menu-toggle {
-        display: inline-flex;
+        display: flex;
         align-items: center;
-        gap: 0;
+        justify-content: center;
+        flex-direction: column;
+        gap: 6px;
         order: 2;
         margin-left: auto;
+        padding: 0.45rem 0.55rem;
+        width: 38px;
     }
 
     .brand {
